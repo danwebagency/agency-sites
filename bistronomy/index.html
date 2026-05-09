@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistronomy</title>
+    <style>
+        body {
+            font-family: var(--first-font-family), var(--font-sans-serif-fallback);
+            margin: 0;
+            padding: 0;
+            background-color: #F2F2F6;
+        }
+        :root {
+            --first-font-family: 'Open Sans', sans-serif;
+            --font-sans-serif-fallback: sans-serif;
+            --second-font-family: 'Merriweather', serif;
+            --font-serif-fallback: serif;
+            --ws-primary-font-family: 'Arial', sans-serif;
+            --ws-secondary-font-family: 'Helvetica', sans-serif;
+        }
+        .sticky-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #0B4EA2;
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .sticky-navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sticky-navbar li {
+            margin-right: 20px;
+        }
+        .sticky-navbar a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: linear-gradient(to bottom, #EE1C25, #D80027);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 2em;
+        }
+        .about {
+            padding: 2em;
+            background-color: #F0F0F0;
+        }
+        .about h2 {
+            color: #0052B4;
+        }
+        .menu {
+            padding: 2em;
+            background-color: #F0F0F0;
+        }
+        .menu h2 {
+            color: #B22234;
+        }
+        .reservation-form {
+            padding: 2em;
+            background-color: #F0F0F0;
+        }
+        .reservation-form h2 {
+            color: #3C3B6E;
+        }
+        .reservation-form form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .reservation-form input {
+            padding: 1em;
+            margin-bottom: 1em;
+            border: none;
+            border-radius: 5px;
+            width: 50%;
+        }
+        .reservation-form button {
+            padding: 1em;
+            background-color: #0B4EA2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact {
+            padding: 2em;
+            background-color: #F0F0F0;
+        }
+        .contact h2 {
+            color: #0052B4;
+        }
+        .footer {
+            background-color: #0B4EA2;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="sticky-navbar">
+        <ul>
+            <li><a href="#">Rezervácie</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">VÍNNA KARTA</a></li>
+            <li><a href="#">otváracích hodín</a></li>
+            <li><a href="#">ONLINE POUKÁŽKY</a></li>
+            <li><a href="#">restaurant@bistronomy.sk</a></li>
+            <li><a href="#">+421 903 444 581</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h1>Ponúkame vám to, čo nás baví</h1>
+    </section>
+    <section class="about">
+        <h2>O nás</h2>
+        <p>Bistronomy je výsledkom dlhodobého nadšenia pre chute a estetiku jedla. Nájdete nás vo Vydrici, krásnej novej štvrti v bratislavskom podhradí.</p>
+    </section>
+    <section class="menu">
+        <h2>Menu</h2>
+        <p>Náš šéfkuchár Jakub Röder vám pripraví degustačné menu, ktoré nápadito odráža jeho osobitý štýl a využíva suroviny danej sezóny.</p>
+    </section>
+    <section class="reservation-form">
+        <h2>Rezervácie</h2>
+        <form>
+            <input type="text" placeholder="Meno">
+            <input type="date" placeholder="Dátum">
+            <input type="time" placeholder="Čas">
+            <input type="number" placeholder="Počet hostí">
+            <input type="tel" placeholder="Telefón">
+            <button>Rezervovať</button>
+        </form>
+    </section>
+    <section class="contact">
+        <h2>Kontakt</h2>
+        <p>restaurant@bistronomy.sk</p>
+        <p>+421 903 444 581</p>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2023 Bistronomy</p>
+    </footer>
+</body>
+</html>
