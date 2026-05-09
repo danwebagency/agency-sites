@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html data-locale="sk" lang="sk">
+<head>
+  <title>Domov</title>
+  <meta name="ws:template:build_id" value="ws-intense-next-restaurant-dark"/>
+  <meta charset="utf-8"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <meta content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=0" name="viewport"/>
+  <link href="https://example.com/ws/bundles/css/a4c4509e3c50ffd82851ef671f827876.css" rel="stylesheet"/>
+  <style id="ws-generated-atomic-styles" type="text/css">
+    :root {
+      --color-primary: #333;
+      --color-secondary: #666;
+      --color-background: #f9f9f9;
+      --color-text: #333;
+      --color-link: #337ab7;
+      --font-family: Arial, sans-serif;
+    }
+  </style>
+  <link href="https://example.com/ws/media-library/6bbd1fe56d3121eaf4045bc8041ab9ed/logo_kruh.png" rel="icon" type="image/png"/>
+  <link as="image" href="https://example.com/ws/alt-imgs/w2000/dc5d5cbf8e4b46fb548a9be528315b79.webp" media="(max-width: 576px)" rel="preload"/>
+  <script>(function(context) {
+    context.dataLayer = context.dataLayer || [];
+    context.gtag = function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PL6J3NXCSW');
+
+    function injectScript() {
+      var gtmScript = document.createElement("script");
+      gtmScript.type = "text/javascript";
+      gtmScript.async = true;
+      gtmScript.src = "https://www.googletagmanager.com/gtag/js?id=G-PL6J3NXCSW";
+      (document.getElementsByTagName("head")[0] ||
+       document.getElementsByTagName("body")[0]).appendChild(gtmScript);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var wsCookieBannerElement = document.querySelector('ws-cookie-banner');
+      if (wsCookieBannerElement) {
+        wsCookieBannerElement.addEventListener(
+         'ws:cookie-banner', function(event) {
+          if (event.detail && event.detail.accepted) {
+            injectScript();
+          }
+        });
+      } else {
+        injectScript();
+      }
+    });
+  })(window);</script>
+</head>
+<body>
+  <header id="ws-site-header-wrapper">
+    <div data-color-palette="custom-palette-1" id="ws-color-palette">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h1>Domov</h1>
+      <p>Welcome to Bistronomy restaurant.</p>
+    </section>
+    <section>
+      <h2>Reservation</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time"><br><br>
+        <label for="guests">Guests:</label>
+        <input type="number" id="guests" name="guests"><br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <p>restaurant@bistronomy.sk</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Bistronomy restaurant</p>
+  </footer>
+  <ws-global src="/ws/globals/cookie-banner/index.html"><div id="ws-cookie-banner">
+  </div></ws-global>
+  <ws-global src="/ws/globals/header-code/index.html"><div id="ws-site-header-wrapper">
+  </div></ws-global>
+</body>
+</html>
