@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistronomy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .hero {
+            background-image: linear-gradient(to bottom, #f2f2f2, #fff);
+            background-size: 100% 300px;
+            background-position: 0% 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+        .hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 48px;
+        }
+        .hero p {
+            font-size: 18px;
+        }
+        .about {
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .about p {
+            font-size: 18px;
+        }
+        .menu {
+            background-image: linear-gradient(to bottom, #f2f2f2, #fff);
+            background-size: 100% 300px;
+            background-position: 0% 100%;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .menu h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .menu p {
+            font-size: 18px;
+        }
+        .reservation {
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .reservation h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .reservation-form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .reservation-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .reservation-form input, .reservation-form select {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .reservation-form button {
+            width: 100%;
+            height: 40px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .reservation-form button:hover {
+            background-color: #444;
+        }
+        .contact {
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .contact p {
+            font-size: 18px;
+        }
+        @media only screen and (max-width: 768px) {
+            .hero {
+                height: 100vh;
+                background-position: 0% 100%;
+            }
+            .about, .menu, .reservation, .contact {
+                padding: 50px 20px;
+            }
+            .reservation-form {
+                margin: 0 auto;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            .hero {
+                height: 100vh;
+                background-position: 0% 100%;
+            }
+            .about, .menu, .reservation, .contact {
+                padding: 20px;
+            }
+            .reservation-form {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Bistronomy</h1>
+        <p>Restaurant</p>
+    </section>
+    <section class="about">
+        <h2>O nás</h2>
+        <p>Bistronomy je moderný gastronomický koncept, ktorý ponúka výbornú hudbu, špičkovou kuchyňu a priateľské prostredie.</p>
+    </section>
+    <section class="menu">
+        <h2>Menu</h2>
+        <p>Náš šéfkuchár pripravil pre vás jedinečné a chutné pokrmy, ktoré vám zabezpečia nezabudnuteľný gastronomický zážitok.</p>
+    </section>
+    <section class="reservation">
+        <h2>Rezervácia</h2>
+        <div class="reservation-form">
+            <label for="name">Meno</label>
+            <input type="text" id="name" name="name">
+            <label for="date">Dátum</label>
+            <input type="date" id="date" name="date">
+            <label for="time">Čas</label>
+            <input type="time" id="time" name="time">
+            <label for="guests">Počet hostí</label>
+            <input type="number" id="guests" name="guests">
+            <label for="phone">Telefónne číslo</label>
+            <input type="tel" id="phone" name="phone">
+            <button type="submit">Odoslať rezerváciu</button>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Kontakt</h2>
+        <p>restaurant@bistronomy.sk</p>
+    </section>
+</body>
+</html>
