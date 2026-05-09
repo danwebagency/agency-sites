@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistronomy Restaurant</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .hero {
+            background: linear-gradient(180deg, #333 0%, #222 100%);
+            background-size: 100% 300px;
+            background-position: 0% 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffd700;
+        }
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .nav {
+            background-color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .nav a:hover {
+            color: #ffd700;
+        }
+        .about {
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .about h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .about p {
+            font-size: 18px;
+            text-align: center;
+        }
+        .menu {
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .menu h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            margin-bottom: 20px;
+        }
+        .menu a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .menu a:hover {
+            color: #ffd700;
+        }
+        .contact {
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .contact p {
+            font-size: 18px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        .footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .footer li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .footer a:hover {
+            color: #ffd700;
+        }
+        @media only screen and (max-width: 768px) {
+            .hero {
+                height: 50vh;
+            }
+            .about {
+                padding: 50px;
+            }
+            .menu {
+                padding: 50px;
+            }
+            .contact {
+                padding: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Bistronomy</h1>
+    </div>
+    <nav class="nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="about" id="about">
+        <h2>Welcome to Bistronomy</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    </div>
+    <div class="menu" id="menu">
+        <h2>Our Menu</h2>
+        <ul>
+            <li><a href="#">Appetizers</a></li>
+            <li><a href="#">Main Course</a></li>
+            <li><a href="#">Desserts</a></li>
+        </ul>
+    </div>
+    <div class="contact" id="contact">
+        <h2>Get in Touch</h2>
+        <p>Email: <a href="mailto:restaurant@bistronomy.sk">restaurant@bistronomy.sk</a></p>
+        <p>Phone: #ERROR!</p>
+    </div>
+    <footer class="footer">
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
